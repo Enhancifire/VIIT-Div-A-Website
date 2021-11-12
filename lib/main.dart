@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import './homepage.dart';
+import 'package:div_a_site/constants.dart';
+import 'screens/home/homepage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,11 +13,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      title: 'VIIT AI Div A 2020-24',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const HomePage(),
+          primaryColor: primaryColor,
+          scaffoldBackgroundColor: bgColor,
+          fontFamily: 'FiraSans',
+          textTheme: ThemeData.dark()
+              .textTheme
+              .apply(bodyColor: Colors.white)
+              .copyWith()),
+      home: HomePage(),
     );
   }
 }
