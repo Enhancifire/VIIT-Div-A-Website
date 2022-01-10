@@ -1,157 +1,157 @@
 import 'package:div_a_site/screens/home/widgets/table_text.dart';
 import 'package:flutter/material.dart';
 
-class DVLec extends StatelessWidget {
-  const DVLec({
+class ADSLec extends StatelessWidget {
+  const ADSLec({
     Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return TableText(tableText: 'DV Lec');
+    return TableText(tableText: 'ADS Lec');
   }
 }
 
-class DSTut extends StatelessWidget {
-  const DSTut({
+class ADSTut extends StatelessWidget {
+  const ADSTut({
     Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return TableText(tableText: 'DS Tut');
+    return TableText(tableText: 'ADS Tut');
   }
 }
 
-class DVTut extends StatelessWidget {
-  const DVTut({
+class PASLec extends StatelessWidget {
+  const PASLec({
     Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return TableText(tableText: 'DV Tut');
+    return TableText(tableText: 'PAS Lec');
   }
 }
 
-class MPLec extends StatelessWidget {
-  const MPLec({
+class PASTut extends StatelessWidget {
+  const PASTut({
     Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return TableText(tableText: 'MP Lec');
+    return TableText(tableText: 'PAS Tut');
   }
 }
 
-class DMLec extends StatelessWidget {
-  const DMLec({
+class SSLec extends StatelessWidget {
+  const SSLec({
     Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return TableText(tableText: 'DM Lec');
+    return TableText(tableText: 'SS Lec');
   }
 }
 
-class MPTut extends StatelessWidget {
-  const MPTut({
+class SSTut extends StatelessWidget {
+  const SSTut({
     Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return TableText(tableText: 'MP Tut');
+    return TableText(tableText: 'SS Tut');
   }
 }
 
-class DBMSTut extends StatelessWidget {
-  const DBMSTut({
+class SETut extends StatelessWidget {
+  const SETut({
     Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return TableText(tableText: 'DBMS Tut');
+    return TableText(tableText: 'SE Tut');
   }
 }
 
-class DBMSLec extends StatelessWidget {
-  const DBMSLec({
+class SELec extends StatelessWidget {
+  const SELec({
     Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return TableText(tableText: 'DBMS Lec');
+    return TableText(tableText: 'SE Lec');
   }
 }
 
-class DSLec extends StatelessWidget {
-  const DSLec({
+class FCNLec extends StatelessWidget {
+  const FCNLec({
     Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return TableText(tableText: 'DS Lec');
+    return TableText(tableText: 'FCN Lec');
   }
 }
 
-class DMTut extends StatelessWidget {
-  const DMTut({
+class FCNTut extends StatelessWidget {
+  const FCNTut({
     Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return TableText(tableText: 'DM Tut');
+    return TableText(tableText: 'FCN Tut');
   }
 }
 
-class DSTLec extends StatelessWidget {
-  const DSTLec({
+class WTLec extends StatelessWidget {
+  const WTLec({
     Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return TableText(tableText: 'DST Lec');
+    return TableText(tableText: 'WT Lec');
   }
 }
 
-class DSTTut extends StatelessWidget {
-  const DSTTut({
+class WTTut extends StatelessWidget {
+  const WTTut({
     Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return TableText(tableText: 'DST Tut');
+    return TableText(tableText: 'WT Tut');
   }
 }
 
-class UHVLec extends StatelessWidget {
-  const UHVLec({
+class OSLec extends StatelessWidget {
+  const OSLec({
     Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return TableText(tableText: 'UHV Lec');
+    return TableText(tableText: 'OS Lec');
   }
 }
 
-class UHVTut extends StatelessWidget {
-  const UHVTut({
+class OSTut extends StatelessWidget {
+  const OSTut({
     Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return TableText(tableText: 'UHV Tut');
+    return TableText(tableText: 'OS Tut');
   }
 }
 

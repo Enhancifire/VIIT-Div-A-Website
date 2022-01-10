@@ -7,11 +7,11 @@ class MyAppBarTitle extends StatelessWidget {
     Key? key,
     required this.ttButton,
     required this.cdButton,
-    required this.fdButton,
+    required this.ntButton,
   }) : super(key: key);
   final VoidCallback ttButton;
   final VoidCallback cdButton;
-  final VoidCallback fdButton;
+  final VoidCallback ntButton;
 
   @override
   Widget build(BuildContext context) {
@@ -27,8 +27,8 @@ class MyAppBarTitle extends StatelessWidget {
           onpressed: cdButton,
         ),
         MyAppBarButton(
-          buttonText: 'Faculty Details',
-          onpressed: fdButton,
+          buttonText: 'Notes',
+          onpressed: ntButton,
         ),
       ],
     );

@@ -1,7 +1,8 @@
 import 'package:div_a_site/constants.dart';
 import 'package:div_a_site/screens/home/widgets/contact_info.dart';
+import 'package:div_a_site/screens/home/widgets/notes/note.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
 import 'mainscreen.dart';
@@ -15,11 +16,14 @@ class HomePage extends StatelessWidget {
   final ttBanner = new GlobalKey();
 
   List<Widget> _homeList = [
-    SizedBox(height: 30),
-    TitleTextBanner(),
-    SizedBox(height: 10),
-    TimeTable(),
+    const SizedBox(height: 30),
+    const TitleTextBanner(),
+    const SizedBox(height: 10),
+    const TimeTable(),
+    const SizedBox(height: 10),
     ContactInfo(),
+    const SizedBox(height: 10),
+    Notes(),
   ];
 
   final ItemScrollController _itemScrollController = ItemScrollController();
@@ -33,7 +37,23 @@ class HomePage extends StatelessWidget {
 
   void cdButton() {
     _itemScrollController.scrollTo(
-      index: 4,
+      index: 5,
+      duration: Duration(seconds: 1),
+      curve: Curves.easeInOutCubic,
+    );
+  }
+
+  void noteButton() {
+    _itemScrollController.scrollTo(
+      index: 7,
+      duration: Duration(seconds: 1),
+      curve: Curves.easeInOutCubic,
+    );
+  }
+
+  void top() {
+    _itemScrollController.scrollTo(
+      index: 0,
       duration: Duration(seconds: 1),
       curve: Curves.easeInOutCubic,
     );
@@ -47,7 +67,7 @@ class HomePage extends StatelessWidget {
         title: MyAppBarTitle(
           ttButton: ttButton,
           cdButton: cdButton,
-          fdButton: ttButton,
+          ntButton: noteButton,
         ),
       ),
       body: ScrollablePositionedList.builder(
@@ -55,6 +75,11 @@ class HomePage extends StatelessWidget {
         itemBuilder: (context, index) => _homeList[index],
         itemPositionsListener: _itemPositionsListener,
         itemScrollController: _itemScrollController,
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: const Icon(Icons.arrow_upward, color: darkColor),
+        onPressed: top,
+        backgroundColor: primaryColor,
       ),
     );
   }

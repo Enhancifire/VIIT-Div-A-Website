@@ -9,6 +9,12 @@ class ContactInfo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
+        Text(
+          'Contact Details',
+          style: Theme.of(context).textTheme.headline3!.copyWith(
+                color: primaryColor,
+              ),
+        ),
         TextCard(
           post: 'CR',
           responsibility: 'Div A',
